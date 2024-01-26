@@ -1,0 +1,27 @@
+{
+  "name": "@hina/desktop",
+  "version": "0.0.1",
+  "description": "An Electron application with Solid and TypeScript",
+  "main": "./out/main/index.js",
+  "author": "example.com",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
+    "lint": "eslint . -c ../../eslint.config.js",
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore",
+    "build": "electron-vite build && electron-builder --config --dir",
+    "dev": "electron-vite dev",
+    "release": "electron-vite build && electron-builder --config",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "electron": "^28.1.4",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "solid-js": "^1.8.12",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "@hina/core": "workspace:^"
+  }
+}

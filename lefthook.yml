@@ -1,0 +1,20 @@
+pre-commit:
+  commands:
+    eslint:
+      glob: "*.{js,ts,jsx,tsx,css}"
+      run: pnpm eslint --fix {staged_files} --no-warn-ignored
+      staged_fixed: true
+    core-stylelint:
+      root: "packages/core/"
+      glob: "*.{jsx,tsx,css}"
+      run: pnpm -F core exec stylelint --fix {staged_files}
+      staged_fixed: true
+    prettier:
+      glob: "*.{js,ts,jsx,tsx,css}"
+      run: pnpm prettier --write {staged_files}
+      staged_fixed: true
+
+pre-push:
+  commands:
+    lint-all:
+      run: pnpm lint:all && echo {all_files} > /dev/null

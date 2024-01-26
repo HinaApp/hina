@@ -1,0 +1,29 @@
+{
+  "name": "@hina/core",
+  "version": "0.0.1",
+  "type": "module",
+  "module": "dist/index",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint . -c ../../eslint.config.js && stylelint .",
+    "lint:prettier": "prettier -c . --cache --ignore-path=../../.prettierignore",
+    "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
+    "build": "vite build",
+    "prepublishOnly": "vite build"
+  },
+  "devDependencies": {
+    "postcss-styled-syntax": "^0.6.4",
+    "solid-js": "^1.8.12",
+    "stylelint": "^16.2.0",
+    "stylelint-config-recommended": "^14.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "vite": "^5.0.12",
+    "vite-plugin-dts": "^3.7.2",
+    "vite-plugin-jsx-css": "https://gitpkg.now.sh/HinaApp/jsx-css/packages/vite-plugin-jsx-css?main",
+    "vite-plugin-solid": "^2.9.1",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "dependencies": {
+    "solid-jsx-css": "https://gitpkg.now.sh/HinaApp/jsx-css/packages/solid-jsx-css?main"
+  }
+}
