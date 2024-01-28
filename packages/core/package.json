@@ -24,6 +24,11 @@
     "vite-tsconfig-paths": "^4.3.1"
   },
   "dependencies": {
+    "@tiptap/core": "^2.1.16",
+    "@tiptap/extension-document": "^2.1.16",
+    "@tiptap/extension-history": "^2.1.16",
+    "@tiptap/extension-paragraph": "^2.1.16",
+    "@tiptap/extension-text": "^2.1.16",
     "solid-jsx-css": "https://gitpkg.now.sh/HinaApp/jsx-css/packages/solid-jsx-css?main"
   }
 }
