@@ -1,10 +1,6 @@
 import { Component } from "solid-js";
-import { styled } from "solid-jsx-css";
+import { MainLayout } from "~/widgets/layout";
 
 export const App: Component = () => {
-  return styled(<div>Hello world</div>)`
-    div {
-      color: red;
-    }
-  `;
+  return <MainLayout>Hello</MainLayout>;
 };
