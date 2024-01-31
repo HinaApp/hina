@@ -1,7 +1,7 @@
 /* eslint-disable unicorn/prefer-top-level-await */
 import { app, nativeTheme } from "electron";
 import "./securityRestrictions";
-// import { registerIpcHandles } from "./ipc";
+import { registerIpcHandles } from "./ipc";
 import { restoreOrCreateWindow } from "./mainWindow";
 
 // Set default theme to dark
@@ -24,7 +24,7 @@ app
   .then(() => {
     // Set app user model id for windows
     // electronApp.setAppUserModelId("com.electron");
-    // registerIpcHandles();
+    registerIpcHandles();
 
     // Default open or close DevTools by F12 in development
     // and ignore CommandOrControl + R in production.
