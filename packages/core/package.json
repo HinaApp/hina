@@ -29,10 +29,12 @@
     "@kobalte/core": "^0.12.1",
     "@tiptap/core": "^2.1.16",
     "@tiptap/extension-document": "^2.1.16",
+    "@tiptap/extension-dropcursor": "^2.2.1",
     "@tiptap/extension-heading": "^2.2.1",
     "@tiptap/extension-history": "^2.1.16",
     "@tiptap/extension-paragraph": "^2.1.16",
     "@tiptap/extension-text": "^2.1.16",
+    "@tiptap/pm": "^2.2.1",
     "@tiptap/suggestion": "^2.2.1",
     "solid-jsx-css": "https://gitpkg.now.sh/HinaApp/jsx-css/packages/solid-jsx-css?main"
   }

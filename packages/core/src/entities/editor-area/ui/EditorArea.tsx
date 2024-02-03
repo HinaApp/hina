@@ -54,11 +54,12 @@ export const EditorArea: Component<EditorAreaProps> = (props) => {
   return styled(<div class="RichTextEditor" ref={ref} />)`
     .RichTextEditor {
       height: 100%;
+      line-height: 1.2;
     }
 
     :deep(.ProseMirror) {
       outline: none;
-      padding: 10px;
+      padding: 20px;
       height: 100%;
       overflow: auto;
 
